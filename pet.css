@@ -5,6 +5,7 @@ body{
     background:linear-gradient(180deg,#eafcff,#b9ecff 40%,#89d9ff);
     padding:12px;
     overflow-x:hidden;
+    background-image: url("img/image.png");
 }
 
 body::before{
