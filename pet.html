@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Pet</title>
+    <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Cyber Pet</h1>
+        <ul class="menu">
+        
+        </ul>
+    </div>
+
+    <div class="mainPetBox">
+        <div class="petBoxSingular" id="petBoxSingular">
+            <input type="text" class="petName" placeholder="Coloque o nome do seu Puff!"></input>
+            <h4 class="petSubClass"><em>Puff</em></h4>
+            <img src="pluffs.png" id="petIcon" class="petIcon">
+            <div class="petObjects">
+                <label for="objectLvlPlay" class="objectNames" id="objectPlay">Recreação</label>
+                    <progress class="objectLevels" id="objectLvlPlay" max="100" value="50"> 50% </progress>
+                <label for="objectLvlHunger"" class="objectNames" id="objectHunger">Fome</label>
+                    <progress class="objectLevels" id="objectLvlHunger" max="100" value="60"> 60% </progress>
+                <label for="objectLvlThirst" class="objectNames" id="objectThirst">Sede</label>
+                    <progress class="objectLevels" id="objectLvlThirst" max="10s20" value="10"> 10% </progress>
+                <label for="objectLvlWalks" class="objectNames" id="objectWalks">Tempo Livre</label>
+                    <progress class="objectLevels" id="objectLvlWalks" max="100" value="90"> 90% </progress>
+            </div>
+            <button type="submit" class="objectButtons" id="buttonPlayWith">Brincar</button>
+            <button type="submit" class="objectButtons" id="buttonFeed">Dar comida</button>
+            <button type="submit" class="objectButtons" id="buttonWater">Dat água</button>
+            <button type="submit" class="objectButtons" id="buttonWalk">Passear</button>
+
+            <button type="submit" class="objectButtonsRIP" id="buttonKillPet">Matar</button>
+            <button type="submit" class="objectButtonsRIP" id="buttonRevivePet">Reviver?</button>
+
+        </div>
+
+        <div class="chatBox">
+    <div class="chatHeader">
+        🤖 Conversa com Puff
+    </div>
+
+    <div class="chatMessages" id="chatMessages">
+        <div class="petMessage">
+            Olá! Eu sou seu Puff! 🐾
+        </div>
+    </div>
+
+    <div class="chatInputArea">
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Converse com seu pet..."
+        >
+        <button id="sendMessage">
+            Enviar
+        </button>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <script src="game.js"></script>
+    <script src="ai.js"></script>
+</body>
+</html>
